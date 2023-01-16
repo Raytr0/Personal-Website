@@ -1,0 +1,138 @@
+body{color: sienna; background-image: url("yoshi.PNG"); background-repeat: repeat;}
+h1{
+    color: sienna;
+    margin-left: 45%;}
+.cadet{
+    color: cadetblue;}
+.italic{font-style: italic}
+.bold{font-weight: bold}
+.underline{text-decoration: underline}
+.size{font-size: 40px}
+.red{color: red}
+
+a:link{
+    color: blue;}
+a:visited{
+    color: purple;}
+a:hover{
+    color: cadetblue;}
+a:active{
+    color: cyan;}
+
+a.new:link{
+    color: blue;
+    text-decoration: none;
+}
+a.new:visited{
+    color: purple;
+    text-decoration: none
+}
+a.new:hover{
+    color: cadetblue;
+    text-decoration: underline
+}
+a.new:active{
+    color: darkblue;}
+
+ul.square{list-style-type: square}
+ul.circle{list-style-type: circle; color: black}
+/*li{background-image: url("favicon.ico");
+background-repeat: no-repeat;
+padding-left: 15px;
+list-style-type: none}
+ */
+.redBorder{
+    border-width: 2px;
+    border-style: dashed;
+    border-color: red;
+    width: 400px;
+    border-radius: 5px;
+    display: inline}
+
+p.padding{
+    padding: 10px;
+    border: 1px solid red;
+}
+p.margin{
+    margin: 10px;
+    border: 1px solid red;
+}
+
+div{cursor: url("favicon.ico"), crosshair}
+div.borderline{display: none; border: 1px solid red; width: 100px;}
+
+.background{
+    background-color: red;
+    width: 200px;
+    height: 150px;
+}
+
+.backgroundAbsolute{
+    background: blue;
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    top: 180px;
+    left: 20px;
+    color: white;
+}
+
+.box{
+    box-shadow: 10px 10px;
+    background-color: red;
+    display: inline;
+}
+
+.small{
+    background-image: url("putin.jpg");
+    background-size: 40px 40px;
+    background-repeat: no-repeat;
+    border: solid red;
+    width: 50px;
+    height: 50px;
+}
+
+.beeg{
+    background-image: url("putin.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: solid red;
+    width: 200px;
+    height: 200px;
+}
+
+.textShadow{
+    text-shadow: 5px 5px 5px;
+}
+
+.rotate{
+    transform: rotate(15deg);
+}
+
+.resize{
+    overflow: auto;
+    resize: both;
+}
+
+.putinAbsolute{
+    background: blue;
+    width: 150px;
+    height: 10px;
+    position: absolute;
+    top: 500px;
+    left: 700px;
+    color: white;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+}
+.resizable {
+    display: inline-block;
+    resize: both;
+    overflow: auto; /*or hidden*/
+    line-height: 0;
+}
+.resizable img {
+    width: 100%;
+    height: 100%;
+}

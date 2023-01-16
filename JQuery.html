@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="jquery-3.6.0.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="DemoDiv2" title="test title">Demo Div #2</div>
+<script>
+    $(document).ready(function (){
+        var demoDiv = $("#DemoDiv2");
+        demoDiv.click(function (){
+            alert(demoDiv.attr("title"));
+            demoDiv.attr("title", "changed title!");
+            alert(demoDiv.attr("title"))
+            });
+        });
+</script>
+
+<div id="dateandtime" data-number="23" data-name="" name="" data-date="01/02/2021">numbers be like</div>
+<script>
+    $(document).ready(function (){
+        var myDiv = $("#dateandtime");
+        myDiv.click(function (){
+            var divNumber = myDiv.data("number");
+            alert(divNumber)
+            })
+        })
+</script>
+</body>
+</html>
