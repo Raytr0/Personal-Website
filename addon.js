@@ -10,13 +10,39 @@ function yesNo(){
 
 document.getElementById("Google").onclick = function() {googlie()}
 function googlie(){
-    window.open("https://www.youtube.com/", "_blank", "width=200, height=200, scrollbar=no");
+    window.open("https://www.youtube.com/watch?v=NcLH6jAWG2E", "_blank", "width=200, height=200, scrollbar=no");
 }
 
 document.getElementById("date").onclick = function() {today()};
 function today(){
     var d = new Date();
-    document.write(d.getDay());
+    let day;
+    switch (d.getDay()) {
+        case 0:
+            day = "Sunday";
+            break;
+        case 1:
+            day = "Monday";
+            break;
+        case 2:
+            day = "Tuesday";
+            break;
+        case 3:
+            day = "Wednesday";
+            break;
+        case 4:
+            day = "Thursday";
+            break;
+        case 5:
+            day = "Friday";
+            break;
+        case 6:
+            day = "Saturday";
+    }
+    document.write(day);
+    if (day = "Wednesday"){
+        window.open("https://www.youtube.com/watch?v=du-TY1GUFGk", "_blank", "width=500, height=500, scrollbar=no");
+    }
 };
 
 var p = Math.PI;
